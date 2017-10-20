@@ -1,0 +1,121 @@
+
+1-
+
+import java.util.Scanner;
+public class MaiorNumero {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int a = 0, maior = 0, menor = 0;
+		for(int x = 0; x < 2; x++){
+			System.out.println("Insira um valor:");
+			a = in.nextInt();
+			if(x == 0){
+				maior = a;
+				menor = a;
+			}
+			if(a > maior){
+				maior = a;
+			}
+			if(a < menor){
+				menor = a;
+			}
+		}
+		System.out.print("Maior: "+ maior );
+	}
+}
+
+
+
+2-
+
+
+import java.util.Scanner;
+
+public class NumeroDecrescente {
+public static void main (String[] args) {
+  Scanner in = new Scanner(System.in);
+  int a = 0 ;
+System.out.println("Digite numero inteiro" );
+a = in.nextInt();
+
+while (a>-1)
+{
+System.out.println(a);
+a --;
+}
+}
+} 
+
+
+3
+
+public class somaimpar {
+   public static void main(String[] args) {
+		int somaimpar = 0;
+		long multiplicapar = 1;
+		for (int i = 1; i < 30; i+= 2) {
+			somaimpar += i;
+			multiplicapar *= (i+1);
+			System.out.println(i);
+		}
+		System.out.println(somaimpar);
+		System.out.println(multiplicapar);
+   }
+}
+
+4)
+
+public class Ingresso {
+    
+            
+              double valoringresso  = 100;
+              void imprimevalor(){
+              System.out.println("valor do ingresso é" + valoringresso );
+              
+          }  
+            
+    }
+    
+
+A)
+
+public class Vip extends Ingresso {
+    
+    double valoradicionalvip = 200;
+    void imprimevalorvip(){
+        System.out.println(" O valor total do ingresso vip é " + valoradicionalvip);
+    }
+    
+}
+
+B)
+
+ublic class Normal extends Ingresso {
+    void imprimeNormal(){
+        System.out.println("ingresso normal");
+    }
+    
+}
+
+C)
+
+public class CamaroteInferior extends Vip {
+    
+    public static void main (String[] args){
+        Vip ingresso1 = new Vip();
+        ingresso1.imprimevalor();
+        
+    }
+    
+    
+}
+
+
+public class CamaroteSuperior extends Vip {
+    public static void main (String[]args){
+        Vip ingresso2 = new Vip();
+        ingresso2.imprimevalorvip();
+        
+    }
+    
+}
